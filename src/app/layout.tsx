@@ -23,7 +23,12 @@ export const metadata: Metadata = {
     "Sivakasi Developer",
     "Web Developer Portfolio",
   ],
-  authors: [{ name: "Satheesh Baabu M", url: "https://satheeshbaabum-portfolio.netlify.app" }],
+  authors: [
+    {
+      name: "Satheesh Baabu M",
+      url: "https://satheeshbaabum-portfolio.netlify.app",
+    },
+  ],
   creator: "Satheesh Baabu M",
   metadataBase: new URL("https://satheeshbaabum-portfolio.netlify.app"),
   openGraph: {
@@ -33,13 +38,22 @@ export const metadata: Metadata = {
     url: "https://satheeshbaabum-portfolio.netlify.app",
     siteName: "Satheesh Baabu M Portfolio",
     locale: "en_US",
+    images: [
+      {
+        url: "/sb_logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Satheesh Baabu M - Full Stack Developer",
+      },
+    ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Satheesh Baabu M | Full Stack Developer",
     description:
-      "Full Stack Developer specializing in Next.js, TypeScript, React, Node.js and MongoDB.",
+      "Full Stack Developer specializing in Next.js, TSX, JSX, React, Express.js, Node.js and MongoDB.",
+    images: ["/og-image.png"],
   },
   robots: {
     index: true,

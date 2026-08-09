@@ -7,7 +7,7 @@ export interface PersonalInfo {
   phone: string;
   portfolioUrl: string;
   linkedInUrl: string;
-  githubUrl?: string;
+  githubUrl: string;
   availabilityBadge: string;
   heroHeadline: string;
   heroSubheadline: string;
@@ -37,8 +37,8 @@ export interface ExperienceItem {
 export interface ProjectItem {
   id: string;
   title: string;
-  type: "Featured Personal Project" | "Professional Project";
-  isFeatured?: boolean;
+  type: 'Featured Personal Project' | 'Professional Project' | 'Full-Stack MERN Project' | 'Collaborative Project' | 'Utility Web App' | 'React State Project';isFeatured?: boolean;
+  isSecondary?: boolean;
   badgeText?: string;
   description: string;
   tech: string[];
@@ -78,12 +78,11 @@ export const personalInfo: PersonalInfo = {
   phone: "+91 9360301475",
   portfolioUrl: "https://satheeshbaabum-portfolio.netlify.app",
   linkedInUrl: "https://www.linkedin.com/in/satheeshbaabum",
+  githubUrl: "https://github.com/Satheesh-Baabu",
   availabilityBadge: "Available for Frontend / Full Stack Opportunities",
   heroHeadline: "Hi, I'm Satheesh Baabu.",
-  heroSubheadline:
-    "Full Stack Developer building modern web applications with Next.js & TypeScript.",
-  heroSummary:
-    "Full Stack Developer with 1+ year of industry experience building scalable web applications using Next.js, TypeScript, React, Node.js, and MongoDB. Experienced in developing CMS-driven websites, REST APIs, e-commerce applications, and production-ready web solutions.",
+  heroSubheadline:    "Full Stack Developer building modern web applications with Next.js & Express.js.",
+  heroSummary:    "Full Stack Developer with 1+ year of industry experience building scalable web applications using Next.js, TypeScript, React, Node.js, and MongoDB. Experienced in developing CMS-driven websites, REST APIs, e-commerce applications, and production-ready web solutions.",
   resumePdfPath: "/Satheesh-Baabu-Resume.pdf",
 };
 
@@ -95,8 +94,7 @@ export const quickStats: StatItem[] = [
 ];
 
 export const aboutMeContent = {
-  intro:
-    "I'm a Full Stack Developer focused on building scalable and user-friendly web applications. I work primarily with Next.js, React, TypeScript, Node.js, Express.js, and MongoDB, with experience integrating REST APIs, CMS platforms, authentication, payment gateways, and production deployments.",
+  intro:    "I'm a Full Stack Developer focused on building scalable and user-friendly web applications. I work primarily with Next.js, React, TypeScript, Node.js, Express.js, and MongoDB, with experience integrating REST APIs, CMS platforms, authentication, payment gateways, and production deployments.",
   domains: ["Logistics", "Healthcare", "E-commerce"],
   focusAreas: [
     "Clean code",
@@ -264,7 +262,7 @@ export const projectsData: ProjectItem[] = [
   {
     id: "neststay",
     title: "NestStay - Property Rental Platform",
-    type: "Featured Personal Project",
+    type: "Professional Project",
     badgeText: "Personal Project",
     description:
       "Full-stack property rental management platform built with Next.js, TypeScript, MongoDB, and Mongoose. Includes property discovery, advanced filtering, authentication, favorites, booking workflows, and an admin management dashboard.",
@@ -294,6 +292,76 @@ export const projectsData: ProjectItem[] = [
     liveUrl: "https://nest-stay-teal.vercel.app/",
     image: "/projects/neststay.png",
   },
+  {
+    id: "vprint-tech",
+    title: "V Print Tech Website",
+    type: "Collaborative Project",
+    badgeText: "Collaborative Project",
+    description: "\"V Print Tech\" is a printing offset website developed using the MERN stack in collaboration with Sudhakar.",
+    tech: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
+    features: [
+      "MERN stack architecture",
+      "Printing offset services catalog",
+      "Quote request form workflow",
+      "Collaborative project build",
+      "Responsive Tailwind UI"
+    ],
+    liveUrl: "https://vprinttech.netlify.app/",
+    githubUrl: "https://github.com/Satheesh-Baabu/InternshipFrontend/",
+    image: "/projects/vprint.png"
+  },
+  {
+    id: "smart-restaurant",
+    title: "Smart Restaurant Management and Ordering System",
+    type: "Full-Stack MERN Project",
+    badgeText: "Full-Stack Project",
+    description: "A full-stack MERN web app for restaurant ordering. Features real-time order tracking, cart management, payment integration (Razorpay) and a user-friendly UI.",
+    tech: ["MERN Stack", "Tailwind CSS", "Socket.io", "Razorpay integration"],
+    features: [
+      "Real-time order tracking with Socket.io",
+      "Shopping cart management",
+      "Razorpay payment gateway integration",
+      "Interactive restaurant menu",
+      "User-friendly UI & Dashboard"
+    ],
+    liveUrl: "https://msvrestaurant.vercel.app/",
+    githubUrl: "https://github.com/Satheesh-Baabu/ProjectRestaurantFrontend",
+    image: "/projects/msvrestaurant.png"
+  },
+  {
+    id: "simple-calculator",
+    title: "Simple Calculator",
+    type: "Utility Web App",
+    isSecondary: true,
+    badgeText: "JavaScript App",
+    description: "Simple Calculator using Javascript.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    features: [
+      "Clean keypad layout",
+      "Arithmetic operations",
+      "Lightweight Vanilla JS logic"
+    ],
+    liveUrl: "https://satheeshbaabucalc.netlify.app/",
+    githubUrl: "https://github.com/Satheesh-Baabu/Simple-Calculator",
+    image: "/projects/calculator.png"
+  },
+  {
+    id: "todo-list",
+    title: "TO-DO List",
+    type: "React State Project",
+    isSecondary: true,
+    badgeText: "React Project",
+    description: "Building a basic To-DO List at the time of learning React.js without responsive layout.",
+    tech: ["React.js", "CSS", "Redux"],
+    features: [
+      "Task creation & deletion",
+      "Redux state management",
+      "Filtered views"
+    ],
+    liveUrl: "https://todolistsatheesh.netlify.app/",
+    githubUrl: "https://github.com/Satheesh-Baabu/TodoList",
+    image: "/projects/todolist.png"
+  }
 ];
 
 export const whatIBuildHighlights: HighlightItem[] = [

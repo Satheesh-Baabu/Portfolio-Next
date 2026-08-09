@@ -123,23 +123,26 @@ export default function Hero() {
                 </div>
                 <div className="pl-8 text-slate-400">
                   <span className="text-sky-300">&quot;Next.js&quot;</span>,{" "}
-                  <span className="text-sky-300">&quot;TypeScript&quot;</span>,{" "}
+                  <span className="text-sky-300">&quot;TSX&quot;</span>,{" "}
+                  <span className="text-sky-300">&quot;JSX&quot;</span>,{" "}
                   <span className="text-sky-300">&quot;React&quot;</span>,
+                  
                 </div>
                 <div className="pl-8 text-slate-400">
                   <span className="text-sky-300">&quot;Node.js&quot;</span>,{" "}
+                  <span className="text-sky-300">&quot;Express.js&quot;</span>,{"  "}
                   <span className="text-sky-300">&quot;MongoDB&quot;</span>,{" "}
                   <span className="text-sky-300">&quot;Tailwind&quot;</span>
                 </div>
                 <div className="pl-4">],</div>
-                <div className="pl-4">
+                {/* <div className="pl-4">
                   <span className="text-blue-400">status</span>:{" "}
                   <span className="text-emerald-300">&quot;Ready for Production Opportunities&quot;</span>
-                </div>
+                </div> */}
                 <div>&#125;;</div>
 
                 {/* Tech Pills Footer */}
-                <div className="pt-4 border-t border-[#1E293B] mt-4 flex flex-wrap gap-1.5 font-sans">
+                {/* <div className="pt-4 border-t border-[#1E293B] mt-4 flex flex-wrap gap-1.5 font-sans">
                   {["Next.js", "TypeScript", "React", "Node.js", "MongoDB"].map((tech) => (
                     <span
                       key={tech}
@@ -148,7 +151,7 @@ export default function Hero() {
                       {tech}
                     </span>
                   ))}
-                </div>
+                </div> */}
 
               </div>
 
