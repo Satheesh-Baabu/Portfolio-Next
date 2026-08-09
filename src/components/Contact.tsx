@@ -29,7 +29,7 @@ export default function Contact() {
             Let&apos;s Build Something Together
           </h2>
           <p className="text-base text-slate-300 max-w-2xl mx-auto leading-relaxed">
-            I&apos;m currently open to opportunities where I can contribute as a Frontend or Full Stack Developer and continue growing with a strong engineering team.
+            I&apos;m currently open to opportunities where I can contribute as a Frontend or Full Stack Developer and continue growing with a strong team.
           </p>
         </div>
 
@@ -109,10 +109,10 @@ export default function Contact() {
                 </div>
               </div>
 
-              <div className="pt-2 border-t border-[#1E293B] text-[11px] font-mono text-emerald-400 flex items-center gap-1.5">
+              {/* <div className="pt-2 border-t border-[#1E293B] text-[11px] font-mono text-emerald-400 flex items-center gap-1.5">
                 <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
                 <span>Open to Remote &amp; On-Site Roles</span>
-              </div>
+              </div> */}
             </div>
 
           </div>

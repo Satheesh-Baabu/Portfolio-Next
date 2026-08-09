@@ -9,7 +9,7 @@ export default function Projects() {
   const [selectedProject, setSelectedProject] = useState<ProjectItem | null>(null);
 
   const featuredPersonalProject = projectsData.find((p) => p.id === "neststay");
-  const professionalProjects = projectsData.filter((p) => p.type === "Professional Project");
+  const professionalProjects = projectsData;
 
   return (
     <section id="projects" className="py-20 bg-[#0B1628]/40 border-y border-[#1E293B]">
@@ -18,7 +18,7 @@ export default function Projects() {
         {/* Section Header */}
         <div className="mb-14">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded bg-blue-950/60 border border-blue-500/20 text-xs font-mono text-blue-400 mb-3">
-            <span>04. FEATURED PROJECTS</span>
+            <span>04. PROJECTS</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
             Production &amp; Showcase Applications
@@ -29,7 +29,7 @@ export default function Projects() {
         </div>
 
         {/* 1. FEATURED PERSONAL PROJECT (NestStay - Visually Largest Hero Showcase) */}
-        {featuredPersonalProject && (
+        {/* {featuredPersonalProject && (
           <div className="mb-16">
             <div className="flex items-center gap-2 mb-4">
               <span className="w-2 h-2 rounded-full bg-blue-400"></span>
@@ -40,7 +40,6 @@ export default function Projects() {
 
             <div className="group rounded-2xl bg-[#0B1628] border-2 border-blue-500/40 hover:border-blue-500 transition-all duration-300 shadow-xl overflow-hidden grid grid-cols-1 lg:grid-cols-12 gap-0">
               
-              {/* Image Preview Side */}
               <div className="lg:col-span-7 relative h-72 sm:h-96 lg:h-auto overflow-hidden bg-[#07111F]">
                 <Image
                   src={featuredPersonalProject.image}
@@ -58,7 +57,6 @@ export default function Projects() {
                 </div>
               </div>
 
-              {/* Text Info Side */}
               <div className="lg:col-span-5 p-6 sm:p-8 flex flex-col justify-between space-y-6">
                 <div>
                   <div className="flex items-center gap-2 text-xs font-mono text-slate-400 mb-2">
@@ -74,7 +72,6 @@ export default function Projects() {
                     {featuredPersonalProject.description}
                   </p>
 
-                  {/* Key Features Grid */}
                   <div className="mt-5 space-y-2">
                     <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider">
                       Core Features:
@@ -89,7 +86,6 @@ export default function Projects() {
                     </div>
                   </div>
 
-                  {/* Tech Stack Badges */}
                   <div className="mt-5 pt-4 border-t border-[#1E293B] flex flex-wrap gap-1.5">
                     {featuredPersonalProject.tech.map((t) => (
                       <span
@@ -102,7 +98,6 @@ export default function Projects() {
                   </div>
                 </div>
 
-                {/* Actions */}
                 <div className="flex items-center gap-3 pt-2">
                   <button
                     type="button"
@@ -118,10 +113,10 @@ export default function Projects() {
 
             </div>
           </div>
-        )}
+        )} */}
 
         {/* 2. PROFESSIONAL PROJECTS HEADER */}
-        <div className="pt-6 mb-8 border-t border-[#1E293B]">
+        {/* <div className="pt-6 mb-8 border-t border-[#1E293B]">
           <div className="flex items-center gap-2 mb-2">
             <ShieldCheck className="w-4 h-4 text-emerald-400" />
             <span className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-widest">
@@ -129,7 +124,7 @@ export default function Projects() {
             </span>
           </div>
           <h3 className="text-xl font-bold text-white">Client &amp; Industry Client Deployments</h3>
-        </div>
+        </div> */}
 
         {/* Grid of Professional Projects */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

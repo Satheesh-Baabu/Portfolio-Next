@@ -16,7 +16,7 @@ export default function Education() {
           </h2>
         </div>
 
-        <div className="max-w-3xl">
+        <div className="">
           <div className="p-6 rounded-xl bg-[#0B1628] border border-[#1E293B] space-y-5">
             
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-[#1E293B] pb-4">
@@ -54,7 +54,7 @@ export default function Education() {
               <div className="flex items-center gap-2.5 p-3 rounded-lg bg-blue-950/30 border border-blue-500/20 text-xs text-slate-200">
                 <Award className="w-4 h-4 text-amber-400 shrink-0" />
                 <span className="font-mono text-amber-300 font-semibold">
-                  Academic Achievement:
+                  Volunteering:
                 </span>
                 <span>{educationInfo.specialMention}</span>
               </div>

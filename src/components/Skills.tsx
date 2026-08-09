@@ -60,10 +60,10 @@ export default function Skills() {
                 </div>
               </div>
 
-              <div className="text-[11px] font-mono text-slate-500 pt-2 border-t border-[#1E293B]/60 flex items-center justify-between">
+              {/* <div className="text-[11px] font-mono text-slate-500 pt-2 border-t border-[#1E293B]/60 flex items-center justify-between">
                 <span>{cat.skills.length} competencies</span>
                 <span>Verified</span>
-              </div>
+              </div> */}
             </div>
           ))}
         </div>
