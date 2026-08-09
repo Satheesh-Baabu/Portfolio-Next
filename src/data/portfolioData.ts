@@ -88,7 +88,7 @@ export const personalInfo: PersonalInfo = {
 
 export const quickStats: StatItem[] = [
   { value: "1+", label: "Years Experience" },
-  { value: "4", label: "Featured Projects" },
+  { value: "8", label: "Featured Projects" },
   { value: "10+", label: "Technologies" },
   { value: "3", label: "Industry Domains" },
 ];
