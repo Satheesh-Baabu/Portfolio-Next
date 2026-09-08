@@ -112,7 +112,7 @@ export default function Hero() {
                 </div>
                 <div className="pl-4">
                   <span className="text-blue-400">role</span>:{" "}
-                  <span className="text-emerald-300">&quot;Full Stack Developer&quot;</span>,
+                  <span className="text-emerald-300">&quot;Junior Full Stack Developer&quot;</span>,
                 </div>
                 <div className="pl-4">
                   <span className="text-blue-400">experience</span>:{" "}
@@ -126,7 +126,7 @@ export default function Hero() {
                   <span className="text-sky-300">&quot;TSX&quot;</span>,{" "}
                   <span className="text-sky-300">&quot;JSX&quot;</span>,{" "}
                   <span className="text-sky-300">&quot;React&quot;</span>,
-                  
+                  <span className="text-sky-300">&quot;Laravel&quot;</span>,
                 </div>
                 <div className="pl-8 text-slate-400">
                   <span className="text-sky-300">&quot;Node.js&quot;</span>,{" "}

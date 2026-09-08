@@ -37,7 +37,14 @@ export interface ExperienceItem {
 export interface ProjectItem {
   id: string;
   title: string;
-  type: 'Featured Personal Project' | 'Professional Project' | 'Full-Stack MERN Project' | 'Collaborative Project' | 'Utility Web App' | 'React State Project';isFeatured?: boolean;
+  type:
+    | "Featured Personal Project"
+    | "Professional Project"
+    | "Full-Stack MERN Project"
+    | "Collaborative Project"
+    | "Utility Web App"
+    | "React State Project";
+  isFeatured?: boolean;
   isSecondary?: boolean;
   badgeText?: string;
   description: string;
@@ -81,8 +88,9 @@ export const personalInfo: PersonalInfo = {
   githubUrl: "https://github.com/Satheesh-Baabu",
   availabilityBadge: "Available for Frontend / Full Stack Opportunities",
   heroHeadline: "Hi, I'm Satheesh Baabu.",
-  heroSubheadline:    "Full Stack Developer building modern web applications with Next.js & Express.js.",
-  heroSummary:    "Full Stack Developer with 1+ year of industry experience building scalable web applications using Next.js, TypeScript, React, Node.js, and MongoDB. Experienced in developing CMS-driven websites, REST APIs, e-commerce applications, and production-ready web solutions.",
+  heroSubheadline: "Junior Full Stack Developer",
+  heroSummary:
+    "Junior Full Stack Developer with 1+ year of industry experience building scalable web applications using Next.js, TypeScript, React, Node.js, MongoDB, Laravel. Experienced in developing CMS-driven websites, REST APIs, e-commerce applications, and production-ready web solutions.",
   resumePdfPath: "/Satheesh-Baabu-Resume.pdf",
 };
 
@@ -94,7 +102,8 @@ export const quickStats: StatItem[] = [
 ];
 
 export const aboutMeContent = {
-  intro:    "I'm a Full Stack Developer focused on building scalable and user-friendly web applications. I work primarily with Next.js, React, TypeScript, Node.js, Express.js, and MongoDB, with experience integrating REST APIs, CMS platforms, authentication, payment gateways, and production deployments.",
+  intro:
+    "I'm a Junior Full Stack Developer focused on building scalable and user-friendly web applications. I work primarily with Next.js, React, TypeScript, Node.js, Express.js, and MongoDB, with experience integrating REST APIs, CMS platforms, authentication, payment gateways, and production deployments.",
   domains: ["Logistics", "Healthcare", "E-commerce"],
   focusAreas: [
     "Clean code",
@@ -121,7 +130,7 @@ export const skillCategories: SkillCategory[] = [
   },
   {
     title: "Backend",
-    skills: ["Node.js", "Express.js", "Next.js API Routes", "Laravel"],
+    skills: ["Node.js", "Express.js", "Next.js API Routes", "Laravel", "PHP"],
   },
   {
     title: "Database",
@@ -155,7 +164,7 @@ export const skillCategories: SkillCategory[] = [
 export const experienceData: ExperienceItem[] = [
   {
     company: "AIIMTECH Software System",
-    role: "Full Stack Developer",
+    role: "Junior Full Stack Developer",
     location: "Sivakasi, Tamil Nadu",
     duration: "Jun 2025 - Present",
     responsibilities: [
@@ -174,6 +183,7 @@ export const experienceData: ExperienceItem[] = [
       "Node.js",
       "Express.js",
       "Laravel",
+      "PHP",
       "MongoDB",
       "MySQL",
       "Tailwind CSS",
@@ -184,6 +194,37 @@ export const experienceData: ExperienceItem[] = [
 ];
 
 export const projectsData: ProjectItem[] = [
+  {
+    id: "vanitha-enterprises",
+    title: "Vanitha Enterprises - Crackers Online Estimation Platform",
+    type: "Professional Project",
+    badgeText: "Freelance Project",
+    description:
+      "A complete online crackers platform for customers to browse products, create estimates and track order status. Includes an admin dashboard for managing products, orders, store status, and customer order communication through WhatsApp and email.",
+    tech: [
+      "Laravel",
+      "Next.js",
+      "JavaScript",
+      "MySQL",
+      "PHP",
+      "Tailwind CSS",
+      "REST APIs",
+    ],
+    features: [
+      "Online crackers product browsing and estimation",
+      "Order status tracking",
+      "Admin dashboard",
+      "Product and category management",
+      "Order management and status updates",
+      "Store status management",
+      "WhatsApp, Email integration for order notifications",
+      "MySQL database storage",
+      "Responsive UI",
+      "Hostinger deployment",
+    ],
+    liveUrl: "https://vanithaenterprises.com",
+    image: "/projects/vanitha_crackers.png",
+  },
   {
     id: "sigma-transport",
     title: "Sigma Transport - Logistics & Driver Recruitment Platform",
@@ -240,25 +281,25 @@ export const projectsData: ProjectItem[] = [
     liveUrl: "https://amirthanoilmills.com",
     image: "/projects/amirthan.png",
   },
-  {
-    id: "cinqcare",
-    title: "Cinqcare - Healthcare Web Portals",
-    type: "Professional Project",
-    badgeText: "Professional Project",
-    role: "Frontend Developer",
-    description:
-      "CMS-driven healthcare web portals developed using Next.js and Headless WordPress with responsive Tailwind CSS components and Vercel deployment.",
-    tech: ["Next.js", "Tailwind CSS", "Headless WordPress", "Vercel"],
-    features: [
-      "CMS-driven healthcare portals",
-      "Headless WordPress API integration",
-      "Patient health resource modules",
-      "Responsive Tailwind CSS UI components",
-      "Optimized Vercel deployment",
-    ],
-    liveUrl: "https://cinq.care",
-    image: "/projects/cinqcare.png",
-  },
+  // {
+  //   id: "cinqcare",
+  //   title: "Cinqcare - Healthcare Web Portals",
+  //   type: "Professional Project",
+  //   badgeText: "Professional Project",
+  //   role: "Frontend Developer",
+  //   description:
+  //     "CMS-driven healthcare web portals developed using Next.js and Headless WordPress with responsive Tailwind CSS components and Vercel deployment.",
+  //   tech: ["Next.js", "Tailwind CSS", "Headless WordPress", "Vercel"],
+  //   features: [
+  //     "CMS-driven healthcare portals",
+  //     "Headless WordPress API integration",
+  //     "Patient health resource modules",
+  //     "Responsive Tailwind CSS UI components",
+  //     "Optimized Vercel deployment",
+  //   ],
+  //   liveUrl: "https://cinq.care",
+  //   image: "/projects/cinqcare.png",
+  // },
   {
     id: "neststay",
     title: "NestStay - Property Rental Platform",
@@ -297,36 +338,38 @@ export const projectsData: ProjectItem[] = [
     title: "V Print Tech Website",
     type: "Collaborative Project",
     badgeText: "Collaborative Project",
-    description: "\"V Print Tech\" is a printing offset website developed using the MERN stack in collaboration with Sudhakar.",
+    description:
+      '"V Print Tech" is a printing offset website developed using the MERN stack in collaboration with Sudhakar.',
     tech: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
     features: [
       "MERN stack architecture",
       "Printing offset services catalog",
       "Quote request form workflow",
       "Collaborative project build",
-      "Responsive Tailwind UI"
+      "Responsive Tailwind UI",
     ],
     liveUrl: "https://vprinttech.netlify.app/",
     githubUrl: "https://github.com/Satheesh-Baabu/InternshipFrontend/",
-    image: "/projects/vprint.png"
+    image: "/projects/vprint.png",
   },
   {
     id: "smart-restaurant",
     title: "Smart Restaurant Management and Ordering System",
     type: "Full-Stack MERN Project",
     badgeText: "Full-Stack Project",
-    description: "A full-stack MERN web app for restaurant ordering. Features real-time order tracking, cart management, payment integration (Razorpay) and a user-friendly UI.",
+    description:
+      "A full-stack MERN web app for restaurant ordering. Features real-time order tracking, cart management, payment integration (Razorpay) and a user-friendly UI.",
     tech: ["MERN Stack", "Tailwind CSS", "Socket.io", "Razorpay integration"],
     features: [
       "Real-time order tracking with Socket.io",
       "Shopping cart management",
       "Razorpay payment gateway integration",
       "Interactive restaurant menu",
-      "User-friendly UI & Dashboard"
+      "User-friendly UI & Dashboard",
     ],
     liveUrl: "https://msvrestaurant.vercel.app/",
     githubUrl: "https://github.com/Satheesh-Baabu/ProjectRestaurantFrontend",
-    image: "/projects/msvrestaurant.png"
+    image: "/projects/msvrestaurant.png",
   },
   {
     id: "simple-calculator",
@@ -339,11 +382,11 @@ export const projectsData: ProjectItem[] = [
     features: [
       "Clean keypad layout",
       "Arithmetic operations",
-      "Lightweight Vanilla JS logic"
+      "Lightweight Vanilla JS logic",
     ],
     liveUrl: "https://satheeshbaabucalc.netlify.app/",
     githubUrl: "https://github.com/Satheesh-Baabu/Simple-Calculator",
-    image: "/projects/calculator.png"
+    image: "/projects/calculator.png",
   },
   {
     id: "todo-list",
@@ -351,17 +394,18 @@ export const projectsData: ProjectItem[] = [
     type: "React State Project",
     isSecondary: true,
     badgeText: "React Project",
-    description: "Building a basic To-DO List at the time of learning React.js without responsive layout.",
+    description:
+      "Building a basic To-DO List at the time of learning React.js without responsive layout.",
     tech: ["React.js", "CSS", "Redux"],
     features: [
       "Task creation & deletion",
       "Redux state management",
-      "Filtered views"
+      "Filtered views",
     ],
     liveUrl: "https://todolistsatheesh.netlify.app/",
     githubUrl: "https://github.com/Satheesh-Baabu/TodoList",
-    image: "/projects/todolist.png"
-  }
+    image: "/projects/todolist.png",
+  },
 ];
 
 export const whatIBuildHighlights: HighlightItem[] = [
