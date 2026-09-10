@@ -104,7 +104,7 @@ export const quickStats: StatItem[] = [
 export const aboutMeContent = {
   intro:
     "I'm a Junior Full Stack Developer focused on building scalable and user-friendly web applications. I work primarily with Next.js, React, TypeScript, Node.js, Express.js, and MongoDB, with experience integrating REST APIs, CMS platforms, authentication, payment gateways, and production deployments.",
-  domains: ["Logistics", "Healthcare", "E-commerce"],
+  domains: ["Logistics", "Landing Pages", "E-commerce"],
   focusAreas: [
     "Clean code",
     "Reusable components",

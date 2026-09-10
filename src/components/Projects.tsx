@@ -45,7 +45,7 @@ export default function Projects() {
           <p className="text-sm text-slate-400 mt-2 max-w-2xl">
             Highlighting real-world web solutions, full-stack rental platforms,
             logistics applications, e-commerce systems, MERN web apps, and
-            healthcare portals.
+            learning portals.
           </p>
         </div>
 
